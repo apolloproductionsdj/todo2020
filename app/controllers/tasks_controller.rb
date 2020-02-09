@@ -10,10 +10,10 @@ class TasksController < ApplicationController
     render json: task 
   end 
 
-  def create
+ def create
     task = Task.create(task_params)
     render json: task
-  end 
+  end
 
   private
 
